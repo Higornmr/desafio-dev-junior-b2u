@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
-export const Container = styled.img`
-  width: 300px;
-  height: 300px;
-  border: none;
+export const Container = styled.div`
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
 `;
+
+export const ContainerDescrption = styled.div`
+  width: 100%;
+  height: 40%;
+`;
+export const Name = styled.h1``;
+export const Brand = styled.h2``;
+export const Manufacturing = styled.p``;
+export const Description = styled.p``;

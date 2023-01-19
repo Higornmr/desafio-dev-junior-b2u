@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Button } from "../Components/Button";
-import { Card } from "../Components/Card";
+import {Button} from '../Components/Button' 
+import { CardItem } from "../Components/Card";
+import { Header } from "../Components/Header";
 
 function App() {
   const [salesCards, setSalesCards] = useState([]);
@@ -16,7 +17,7 @@ function App() {
   const listCards = () => {
     console.log(salesCards);
   };
-
+  
   const editCard = (id) => {
     console.log(`Editing card with id: ${id}`);
   };
@@ -27,18 +28,22 @@ function App() {
 
   return (
     <>    
-      <button onClick={addSalesCard}>Adicionar Card</button> 
-      <button onClick={() => listCards()}>List</button>
+    <Header>
+      <Button onClick={addSalesCard}>Adicionar Card</Button> 
+      <Button onClick={() => listCards()}>List</Button>
+      </Header>
+   
       {salesCards.map((card) => (
-        <div key={card.id} style={{ display: "inline-block" }}>
-          <Card src={card.image} alt="Product" width="150" height="150" />
-          <br />
-          <button onClick={() => editCard(card.id)}>Editar</button>
+        <CardItem key={card.id} style={{ display: 'inline-block' }}>
+          <img src={card.image} alt="Product" width="300" height="400" />
           
-          <button onClick={() => deleteCard(card.id)}>Deletar</button>
-         
-        </div>
+        <div>
+          <Button onClick={() => editCard(card.id)}>Editar</Button>
+          <Button onClick={() => deleteCard(card.id)}>Deleter</Button>
+          </div>
+        </CardItem> 
       ))}
+   
     </>
   );
 }
