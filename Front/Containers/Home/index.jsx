@@ -1,9 +1,9 @@
 import React from "react";
-import { BtnStyled } from "./styles";
+import { BoddyStyled } from "./styles";
 
-export function Button ({children, onClick}) {
+export function Boddy ({children}) {
   return (
-  <BtnStyled onClick={onClick}>{children}</BtnStyled>
+  <BoddyStyled>{children}</BoddyStyled>
   )
 };
 

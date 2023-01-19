@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const BtnStyled = styled.button`
-  width: 70px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
+export const BoddyStyled = styled.div`
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 25px;
 `;

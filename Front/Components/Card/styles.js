@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 400px;
-  height: 500px;
+  width: 305px;
+  height: auto;
   border: 1px solid black;
-  display: flex;
+  display: grid;
 `;
 
 export const ContainerDescrption = styled.div`
