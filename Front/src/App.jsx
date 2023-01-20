@@ -3,8 +3,8 @@ import {Button} from '../Components/Button'
 import { CardItem } from "../Components/Card";
 import { Header } from "../Components/Header";
 import { Input } from "../Components/Inputs";
+import  FilterItens  from "../Containers/Filter";
 import ImageUploader from "./Image";
-
 import { Boddy } from "../Containers/Home";
 
 function App() {
@@ -33,15 +33,16 @@ function App() {
   return (
     <>    
     <Header>
-      <Input type="text" placeholder="abacate" />
-      <Input type="text" placeholder="abacate"  />
-      <Input type="text" placeholder="abacate"  />
-      <Input type="text" placeholder="abacate"  />
+      <Input type="text" />
+      <Input type="text" />
+      <Input type="text" />
+      <Input type="text" />
       <ImageUploader />
       <Button onClick={addSalesCard}>Adicionar Card</Button> 
       </Header>
    <Boddy>
- 
+   <FilterItens>
+    
       {salesCards.map((card) => (
         <CardItem key={card.id} style={{ display: 'inline-block' }}>
           <img src={card.image} alt="Product" width="100%" height="400" />
@@ -52,7 +53,10 @@ function App() {
           </div>
         </CardItem> 
       ))}
+
+     </FilterItens>
       </Boddy>
+
 
     
   
