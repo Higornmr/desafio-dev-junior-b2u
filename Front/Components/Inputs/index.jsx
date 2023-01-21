@@ -1,9 +1,9 @@
 import React from "react";
 import { InputStyled } from "./styles";
 
-export function Input () {
+export function Input (props) {
   return (
-  <InputStyled></InputStyled>
+  <InputStyled {...props}/>
   )
 };
 

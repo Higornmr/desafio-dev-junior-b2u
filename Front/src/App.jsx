@@ -4,23 +4,32 @@ import { CardItem } from "../Components/Card";
 import { Header } from "../Components/Header";
 import { Input } from "../Components/Inputs";
 import  FilterItens  from "../Containers/Filter";
-import ImageUploader from "./Image";
+
 import { Boddy } from "../Containers/Home";
 
 function App() {
   const [salesCards, setSalesCards] = useState([]);
+  const initialCardState = {name: '', marca:'', fabricante: '', ano:'', descricao:''}
+  const [newCard, setNewCard] = useState(initialCardState); 
 
   const addSalesCard = () => {
-    const newCard = {
-      id: salesCards.length + 1,
-      image: "https://via.placeholder.com/150",
-      name: "Nome do carro",
-      marca: "Marca do carro",
-      fabricante: "Fabricante",
-      ano: "ano do carro",
-    };
-    setSalesCards([...salesCards, newCard]);
+    const card = {
+      name: newCard.name,
+      marca: newCard.marca,
+      fabricante: newCard.fabricante,
+      descricao: newCard.descricao,
+      ano: newCard.ano,
+    } 
+    if(Object.values(card).every((item) => item)){
+      setSalesCards([...salesCards, card]);
+      setNewCard(initialCardState)
+    }
+      else alert("Campos obrigatorios")
   };
+
+  const handleChange = (event) => {
+    setNewCard(prevState=>({...prevState,[event.target.name]:event.target.value})) 
+  }
 
   const editCard = (id) => {
     console.log(`Editing card with id: ${id}`);
@@ -33,20 +42,19 @@ function App() {
   return (
     <>    
     <Header>
-      <Input type="text" />
-      <Input type="text" />
-      <Input type="text" />
-      <Input type="text" />
-      <ImageUploader />
+      <Input type="text" value={newCard.name} placeholder='Nome' name="name" onChange={handleChange}/>
+      <Input type="text" value={newCard.marca} placeholder='Marca' name="marca" onChange={handleChange}/>
+      <Input type="number" value={newCard.ano} placeholder='Ano' name='ano' onChange={handleChange}/>
+      <Input type="text" value={newCard.fabricante} placeholder='Fabricante' name='fabricante' onChange={handleChange}/>
+      <Input type="text" value={newCard.descricao} placeholder='Descrição' name='descricao'  onChange={handleChange}/>
       <Button onClick={addSalesCard}>Adicionar Card</Button> 
-      </Header>
+    </Header>'  '
+
    <Boddy>
-   <FilterItens>
-    
+   <FilterItens/>
       {salesCards.map((card) => (
-        <CardItem key={card.id} style={{ display: 'inline-block' }}>
-          <img src={card.image} alt="Product" width="100%" height="400" />
-      
+        <CardItem car={card} style={{ display: 'inline-block' }}>
+     { /* <img src={card.image} alt="Product" width="100%" height="400" />*/}
         <div>  
           <Button onClick={() => editCard(card.id)}>Editar</Button>  
           <Button onClick={() => deleteCard(card.id)}>Deleter</Button>
@@ -54,12 +62,7 @@ function App() {
         </CardItem> 
       ))}
 
-     </FilterItens>
       </Boddy>
-
-
-    
-  
     </>
   );
 }

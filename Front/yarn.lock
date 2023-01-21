@@ -798,6 +798,11 @@ update-browserslist-db@^1.0.9:
     escalade "^3.1.1"
     picocolors "^1.0.0"
 
+uui@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/uui/-/uui-1.0.7.tgz#283eab026f323a00f333e1dbcf93ce1a41a47782"
+  integrity sha512-k9l6kxVMwk02dy9axYYay5dWVF+3jfBcVpgJUj09WIcp4JSHM3JPdlcpicFTWUYryZGKryxSkS0xhtUSn2xAnw==
+
 vite@^4.0.0:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.0.4.tgz#4612ce0b47bbb233a887a54a4ae0c6e240a0da31"
