@@ -1,0 +1,156 @@
+{
+    "cars": [
+      {
+        "category": "Sedans",
+        "models": [
+          {
+            "id": 1,
+            "name": "Accord",
+            "brand": "Honda",
+            "image": "/assets/accord.png",
+            "year": 1976 ,
+            "description": "Comfortable and reliable sedan with a sleek design",
+            "owner":[
+                {
+                    "name": "Maria",
+                    "email": "Maria@email.com",
+                    "phone": "45679876"
+                }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Camry",
+            "brand": "Toyota",
+            "image": "/assets/camry.png",
+            "year": 1992,
+            "description": "Popular sedan with a spacious interior and excellent fuel economy",
+            "owner":[
+                {
+                    "name": "Marcos",
+                    "email": "Marcos@email.com",
+                    "phone": "12396547"
+                }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Altima",
+            "brand": "Nissan",
+            "image": "/assets/altima.png",
+            "year": 1993,
+            "description": "Smooth and powerful sedan with advanced technology features",
+            "owner":[
+                {
+                    "name": "Jose",
+                    "email": "Jose@email.com",
+                    "phone": "12984565"
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "SUVs",
+        "models": [
+          {
+            "id": 4,
+            "name": "Escape",
+            "brand": "Ford",
+            "image": "/assets/escape.png",
+            "year": 2001,
+            "description": "Versatile and sporty SUV with a comfortable ride",
+            "owner":[
+                {
+                    "name": "Joana",
+                    "email": "Joana@email.com",
+                    "phone": "98745632"
+                }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "CR-V",
+            "brand": "Honda",
+            "image": "/assets/cr-v.png",
+            "year": 1995,
+            "description": "Popular SUV with a spacious interior and excellent fuel economy",
+            "owner":[
+                {
+                    "name": "Fred",
+                    "email": "Fred@email.com",
+                    "phone": "91543265"
+                }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Rogue",
+            "brand": "Nissan",
+            "image": "/assets/rogue.png",
+            "year": 2007,
+            "description": "Smooth and powerful SUV with advanced technology features",
+            "owner":[
+                {
+                    "name": "Mateus",
+                    "email": "Mateus@email.com",
+                    "phone": "15935746"
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Trucks",
+        "models": [
+          {
+            "id": 7,
+            "name": "F-150",
+            "brand": "Ford",
+            "image": "/assets/f-150.png",
+            "year": 1997,
+            "description": "Powerful and dependable truck with a rugged design",
+            "owner":[
+                {
+                    "name": "Paulo",
+                    "email": "Paulo@email.com",
+                    "phone": "95196398"
+                }
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Silverado",
+            "brand": "Chevrolet",
+            "image": "/assets/silverado.png",
+            "year": 2001,
+            "description": "Popular truck with a spacious interior and excellent fuel economy",
+            "owner":[
+                {
+                    "name": "Carla",
+                    "email": "Carla@email.com",
+                    "phone": "98796395"
+                }
+            ]
+            
+          },
+          {
+            "id": 9,
+            "name": "Ram 1500",
+            "brand": "Ram",
+            "image": "/assets/ram-1500.png",
+            "year": 2011,
+            "description": "Smooth and powerful truck with advanced technology features",
+            "owner":[
+                {
+                    "name": "Emanuel",
+                    "email": "Emanuel@email.com",
+                    "phone": "78998777"
+                }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
