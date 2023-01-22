@@ -14,7 +14,7 @@
                 {
                     "name": "Maria",
                     "email": "Maria@email.com",
-                    "phone": "45679876"
+                    "phone":45679876
                 }
             ]
           },
@@ -29,7 +29,7 @@
                 {
                     "name": "Marcos",
                     "email": "Marcos@email.com",
-                    "phone": "12396547"
+                    "phone": 12396547
                 }
             ]
           },
@@ -44,7 +44,7 @@
                 {
                     "name": "Jose",
                     "email": "Jose@email.com",
-                    "phone": "12984565"
+                    "phone": 12984565
                 }
             ]
           }
@@ -64,7 +64,7 @@
                 {
                     "name": "Joana",
                     "email": "Joana@email.com",
-                    "phone": "98745632"
+                    "phone": 98745632
                 }
             ]
           },
@@ -79,7 +79,7 @@
                 {
                     "name": "Fred",
                     "email": "Fred@email.com",
-                    "phone": "91543265"
+                    "phone": 91543265
                 }
             ]
           },
@@ -94,7 +94,7 @@
                 {
                     "name": "Mateus",
                     "email": "Mateus@email.com",
-                    "phone": "15935746"
+                    "phone": 15935746
                 }
             ]
           }
@@ -114,7 +114,7 @@
                 {
                     "name": "Paulo",
                     "email": "Paulo@email.com",
-                    "phone": "95196398"
+                    "phone": 95196398
                 }
             ]
           },
@@ -129,7 +129,7 @@
                 {
                     "name": "Carla",
                     "email": "Carla@email.com",
-                    "phone": "98796395"
+                    "phone": 98796395
                 }
             ]
             
@@ -145,7 +145,7 @@
                 {
                     "name": "Emanuel",
                     "email": "Emanuel@email.com",
-                    "phone": "78998777"
+                    "phone": 78998777
                 }
             ]
           }

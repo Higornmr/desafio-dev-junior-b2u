@@ -13,3 +13,5 @@ async function createCards(){
     return response.status(201).json(cards)
 
 }
+
+export {getCards, createCards }
