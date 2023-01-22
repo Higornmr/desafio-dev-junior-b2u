@@ -1,10 +1,18 @@
 import express from "express";
-import mongoose from "mongoose";
 
-/*se a senha der errado usar essa iWXg7Wr3ojaGXJtz */
-mongoose
-  .connect(
-    "mongodb+srv://<username>:iHjD0FsSCnz9AJG7@cluster0.sd2mgof.mongodb.net/?retryWrites=true&w=majority"
-  )
-  .then(() => console.log("Banco de dados conectado"))
-  .catch(() => console.log("Banco de dados não conectado"));
+import connectDatabase from "./src/database/db.js";
+
+import routes from "./routes.js";
+
+const app = express();
+
+app.use = express.json();
+app.use = routes;
+
+connectDatabase()
+  .then(() => {
+    app.listen(3000, () =>
+      console.log("Servidor rodando e banco de dados conectado")
+    );
+  })
+  .catch((error) => console.log(error));

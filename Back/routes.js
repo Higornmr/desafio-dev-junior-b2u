@@ -1,8 +1,15 @@
 import { Router } from "express";
 
-import { getCards, createCards } from "./controllers/CardController";
+import {
+  getCards,
+  createCard,
+  deleteCard,
+} from "./src/controllers/CardController.js";
 
-const routes = Router();
+const routes = new Router();
 
-routes.get("/cars", getCards);
-routes.post("/cars", createCards);
+routes.get("/cards", getCards);
+routes.post("/cards", createCard);
+routes.delete("/cards/:id", deleteCard);
+
+export default routes;
